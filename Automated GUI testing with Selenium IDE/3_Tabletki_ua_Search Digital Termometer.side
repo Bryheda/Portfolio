@@ -1,0 +1,168 @@
+{
+  "id": "13da8a7d-441e-4885-9112-69947f0a1159",
+  "version": "2.0",
+  "name": "3_Tabletki_ua_Find Termometer",
+  "url": "https://tabletki.ua/uk/",
+  "tests": [{
+    "id": "b72962af-dc1b-4f4b-8558-324ceda8dc1e",
+    "name": "Untitled",
+    "commands": []
+  }, {
+    "id": "8cd151c2-63bc-4264-8df7-587444397b35",
+    "name": "3_Tabletki",
+    "commands": [{
+      "id": "6d35302e-c6eb-48f4-9fd6-ad492ad92f48",
+      "comment": "",
+      "command": "open",
+      "target": "https://tabletki.ua/uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "00f54603-a2aa-4853-88ac-c4fa75ecf4b5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "85f09767-1b75-44f4-9c1c-0832b4db8c3f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Каталог')]",
+      "targets": [
+        ["css=span:nth-child(3)", "css:finder"],
+        ["xpath=//span", "xpath:position"],
+        ["xpath=//span[contains(.,'Каталог')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a885cfbe-f9ac-4dce-b716-d206d49439a8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[@id='menuItem7']/a/span",
+      "targets": [
+        ["css=#menuItem7 span", "css:finder"],
+        ["xpath=//li[@id='menuItem7']/a/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div/div/div/div/ul/li[8]/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0e4b5af8-f30d-42bc-b906-d1d036d696c6",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.subcategory__category-menu:nth-child(2) > li:nth-child(4) span",
+      "targets": [],
+      "value": "Термометри"
+    }, {
+      "id": "a35ad9c0-36fa-4f83-a41b-9794f49d0191",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Термометри')]",
+      "targets": [
+        ["css=.subcategory__category-menu:nth-child(2) > li:nth-child(4) span", "css:finder"],
+        ["xpath=//li[4]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Термометри')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "11ceb4a8-7e45-4403-8c64-eaa1d5781406",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col:nth-child(4) .card__menu-category--name",
+      "targets": [
+        ["css=.col:nth-child(4) .card__menu-category--name", "css:finder"],
+        ["xpath=//div[4]/a/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a2f10eb-bb8a-4421-8f7e-a38700ccb50e",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='sortSkuDropDown']/div/div",
+      "targets": [
+        ["id=dLabel", "id"],
+        ["css=#dLabel", "css:finder"],
+        ["xpath=//div[@id='dLabel']", "xpath:attributes"],
+        ["xpath=//div[@id='sortSkuDropDown']/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div[2]/div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c190586-8524-4817-9382-02bf8a2c45b2",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Дешеві",
+      "targets": [
+        ["linkText=Дешеві", "linkText"],
+        ["css=.catalog-sort-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Дешеві')]", "xpath:link"],
+        ["xpath=//div[@id='sortSkuDropDown']/div[2]/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[3]", "xpath:href"],
+        ["xpath=//div[2]/a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Дешеві')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "751d03ed-c76a-48b6-9d1b-c0767526df00",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Термометр медичний Волес ЕСТ-1 цифровий')]",
+      "targets": [
+        ["css=#sku_0 .card__category--info span", "css:finder"],
+        ["xpath=//div[@id='sku_0']/article/div[2]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Термометр медичний Волес ЕСТ-1 цифровий')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea9238aa-f3d4-4755-ab02-ec500ddf9f92",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "cheepT"
+    }, {
+      "id": "09b83d8c-5b6f-4ace-8fba-5ad63ab0451e",
+      "comment": "",
+      "command": "echo",
+      "target": "${cheepT}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aecc5f96-a6da-4397-b48f-c391a3b970ee",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.hide-small:nth-child(1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "932159ed-1466-44f4-9c5b-d080c3667ea1",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//a[@id='findProduct']/span",
+      "targets": [],
+      "value": "ЗНАЙТИ В АПТЕКАХ"
+    }, {
+      "id": "9011c758-c46d-422d-911d-5640aaaa7024",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[@id='findProduct']/span",
+      "targets": [
+        ["css=.hide-small:nth-child(1)", "css:finder"],
+        ["xpath=//a[@id='findProduct']/span", "xpath:idRelative"],
+        ["xpath=//div/div[3]/div/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "5193190b-3480-467a-8e0f-2bc28bdbd56c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["b72962af-dc1b-4f4b-8558-324ceda8dc1e"]
+  }],
+  "urls": ["https://tabletki.ua/uk/"],
+  "plugins": []
+}

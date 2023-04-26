@@ -1,0 +1,107 @@
+{
+  "id": "4883f191-385f-487a-820e-749760b74073",
+  "version": "2.0",
+  "name": "3_3",
+  "url": "https://tabletki.ua/uk/",
+  "tests": [{
+    "id": "d0bfaefe-8bbc-4cf7-bbe8-494254d9d7c0",
+    "name": "Tabletki_ua_Digital_Termometer",
+    "commands": [{
+      "id": "4a68e2e4-8cd0-497e-8f54-23de1e4440f9",
+      "comment": "",
+      "command": "open",
+      "target": "https://tabletki.ua/uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c1e0e623-840a-41da-800e-bc6c939c28ae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "597d7bfb-0b0d-4713-bfa4-d07528feef41",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//span[contains(.,'Медична техніка')]",
+      "targets": [],
+      "value": "Медична техніка"
+    }, {
+      "id": "d0fe8f99-dea5-4ed1-be97-6aa59c334405",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Медична техніка')]",
+      "targets": [
+        ["css=li:nth-child(8) span", "css:finder"],
+        ["xpath=//li[8]/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Медична техніка')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f273dfef-f414-4e00-805f-3eeb6c0415f3",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//img[@alt='Термометри']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "83d54f83-7e4d-41a4-ac56-695b8cf7e37c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Термометри']",
+      "targets": [
+        ["css=.col:nth-child(4) > .marketing-image-block__container img", "css:finder"],
+        ["xpath=//img[@alt='Термометри']", "xpath:img"],
+        ["xpath=//div[4]/a/div/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "faea59cd-ea2d-4dc3-a9fc-c1e952c05836",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@alt='Цифрові']",
+      "targets": [
+        ["css=.col:nth-child(4) > .card__menu-category img", "css:finder"],
+        ["xpath=//img[@alt='Цифрові']", "xpath:img"],
+        ["xpath=//div[4]/a/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5a429662-fa1d-49ee-bc03-f95af7f015ff",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,240)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cdf0310-76dd-4ad5-8d8c-351072acf3da",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=#sku_0 .text-overflow",
+      "targets": [],
+      "value": "В аптеках не знайдено"
+    }, {
+      "id": "c4d27a4c-3a80-497a-8f40-b0814a50e34c",
+      "comment": "",
+      "command": "click",
+      "target": "css=#sku_0 .text-overflow",
+      "targets": [
+        ["css=#sku_0 .text-overflow", "css:finder"],
+        ["xpath=//div[@id='sku_0']/article/div[2]/div/a/span", "xpath:idRelative"],
+        ["xpath=//article/div[2]/div/a/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "2ea9c25f-e242-4215-9084-2f3fd43ec801",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["d0bfaefe-8bbc-4cf7-bbe8-494254d9d7c0"]
+  }],
+  "urls": ["https://tabletki.ua/uk/"],
+  "plugins": []
+}

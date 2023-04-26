@@ -1,0 +1,1074 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <style type="text/css">
+        html {
+            font-size: 16px;
+            font-family: "Open Sans", Helvetica, sans-serif;
+        }
+        body {
+            padding: 50px;
+            max-width: 700px;
+            width: 700px;
+        }
+        .page {
+            overflow: hidden;
+            page-break-after: always;
+            margin-bottom: 250px;
+        }
+        h1 {
+            margin-top: 0.25rem;
+            font-size: 1.5rem;
+        }
+        .row {
+            width: 100%;
+        }
+        .col-3 {
+            width: 25%;
+            float:left;
+        }
+        .col-4 {
+            width: 33.33%;
+            float:left;
+        }
+        .col-12 {
+            width: 100%;
+            float: left;
+        }
+        .param {
+            font-size: 0.875rem;
+            font-weight: normal;
+            word-break: break-word;
+        }
+
+        .color-blocker, .color-critical, .color-major, .color-high {
+            color: #D0021B;
+        }
+
+        .conditions-header {
+            font-size: 0.875rem;
+            font-weight: bold;
+            padding-bottom: 0.25rem;
+        }
+
+        .conditions-data {
+            font-weight: normal;
+            font-size: 0.875rem;
+        }
+
+        .clearfix::after {
+            display: block;
+            content: "";
+            clear: both;
+        }
+        .data-row {
+            margin-top: 1rem;
+        }
+
+        .table-steps table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .table-steps table td, .table-steps table th {
+            border: 1px solid;
+            padding: 5px 8px;
+        }
+
+        .table-steps img {
+            max-height: 500px;
+        }
+
+        .table-steps {
+            width: 100%;
+        }
+        .table-steps td {
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #dedede;
+        }
+        .table-steps th {
+            font-size: 0.875rem; text-align: left;
+        }
+        .table-steps p {
+            margin-bottom: 0;
+        }
+        .steps ol, .steps ul {
+            margin-bottom: 0;
+            padding-left: 1.125rem;
+        }
+        .steps li {
+            font-size: 0.875rem;
+        }
+
+        .step-position span {
+            padding: .25rem 0.75rem;
+            display: block;
+            margin-right: .75rem;
+            border-radius: .25rem;
+            color: #636363;
+            background: #f3f3f3;
+        }
+
+        .step-action p {
+            display: none;
+        }
+
+        .step-content p.data {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .description {
+            font-size: 0.875rem !important;
+            margin-top: 0 !important;
+        }
+        .description p{
+            font-size: 0.875rem !important;
+            margin-top: 0 !important;
+        }
+
+        .table-steps img,
+        .description img,
+        .markdown img,
+        .steps img {
+            max-width: 100%;
+        }
+
+        .attachments {vertical-align: top;}
+        .attachments .attachment{width:96px;display:inline-block; margin-right: 8px; vertical-align: top}
+        .attachments .attachment-image{width:96px;height:96px;border-radius:6px;background-size:cover !important;}
+        .attachments .attachment-file{width:96px;height:96px;background:#e9e9e9;border-radius:6px;}
+        .attachments .attachment-file .attachment-extension{display:inline-block; text-decoration:none !important;font-weight:500;color:#000; padding-left: 8px; padding-top: 8px; font-size: 0.75rem;}
+        .attachments .attachment .attachment-filename{width:96px;display:block; text-overflow:ellipsis;white-space:nowrap;margin-top:0.5rem;overflow:hidden;text-decoration:none;color:#656565;font-size:0.625rem;}
+        .attachments .attachment a {text-decoration:none !important;border-bottom: 0;}
+    </style>
+    <link rel="stylesheet" href="https://app.qase.io/assets/main/css/fontawesome.min.css?1682340388">
+</head>
+<body>
+                                <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            TMAB-1
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Додавання невалідної картки Приватбанка</h1>
+        <div class="description"><p>Негативна перевірка</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Negative</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Regression</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><ol>
+<li>Застосунок monobank встановлений на мобільний телефон</li>
+<li>Здійснено вхід у застосунок в якості клієнта банка Монобанк, тестові дані - телефон клієнта +38063-000-00-38, пін-код 1111</li>
+<li>Клієнт має одну валідну гривневу картку Монобанк</li>
+</ol></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>На головній сторінці натиснути на кнопку «Поповнити свою картку»</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Кнопка "Поповнити свою картку" натискається.<br />
+Відбувається перехід на сторінку "Поповнення своєї картки"</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-330da42290a24c37c16a261dac18b2db551eeb4e">
+                        <a target="_blank" title="1.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/330da42290a24c37c16a261dac18b2db551eeb4e/1.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/330da42290a24c37c16a261dac18b2db551eeb4e/1.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Обрати пункт «З іншої картки» в розділі «Інші способи»</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Відкривається вікно "Поповнити з іншої картки"</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-e26c922af8e8ab2b61bb8154134d2f01590e0787">
+                        <a target="_blank" title="2.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/e26c922af8e8ab2b61bb8154134d2f01590e0787/2.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/e26c922af8e8ab2b61bb8154134d2f01590e0787/2.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести невалідний номер картки</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>4141 4141 4141 4141</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Невалідний номер картки викликає появу зверху червоної тимчасово спливаючої підказки «Неправильний номер картки».<br />
+Кнопка "Продовжити" зберігає сірий колір і не натискається</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-d2ef49b7d3a2a82488e848b99bc370eeb1ffc69e">
+                        <a target="_blank" title="3.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/d2ef49b7d3a2a82488e848b99bc370eeb1ffc69e/3.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/d2ef49b7d3a2a82488e848b99bc370eeb1ffc69e/3.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести невалідний номер картки - відмінні від цифр знаки</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>"+"<br />
+"-"<br />
+"."<br />
+"/"<br />
+"*"<br />
+"#"<br />
+"пробіл"</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Натискання не цифр не призводить до їх надрукування.<br />
+Кнопка "Продовжити" зберігає сірий колір і не натискається</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-267f2708fbfac8b4129118e657ef4f5817eea71e">
+                        <a target="_blank" title="4 – копія.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/267f2708fbfac8b4129118e657ef4f5817eea71e/4%20%E2%80%93%20%D0%BA%D0%BE%D0%BF%D1%96%D1%8F.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/267f2708fbfac8b4129118e657ef4f5817eea71e/4%20%E2%80%93%20%D0%BA%D0%BE%D0%BF%D1%96%D1%8F.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">5</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Натиснути стрілочку, перейти на буквенну клавіатуру і ввести невалідний номер картки - букви латиницею і кирилицею</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>"F"<br />
+"Л"</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Натискання букв латиницею і кирилицею не призводить до їх надрукування.<br />
+Кнопка "Продовжити" зберігає сірий колір і не натискається</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-37c3638ba8f41bde66222da4040fa6d450254628">
+                        <a target="_blank" title="4.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/37c3638ba8f41bde66222da4040fa6d450254628/4.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/37c3638ba8f41bde66222da4040fa6d450254628/4.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            TMAB-2
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Додавання валідної карти Приватбанку</h1>
+        <div class="description"><p>Позитивна перевірка</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Negative</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Regression</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><ol>
+<li>Застосунок monobank встановлений на мобільний телефон</li>
+<li>Здійснено вхід у застосунок в якості клієнта банка Монобанк, тестові дані - телефон клієнта +38063-000-00-38, пін-код 1111</li>
+<li>Клієнт має одну валідну гривневу картку Монобанк</li>
+<li>Клієнт має одну валідну картку Приватбанка, яка ще не додана як власна картка клієнта в застосунку monobank</li>
+</ol></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>На головній сторінці натиснути на кнопку «Поповнити свою картку»</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Кнопка "Поповнити свою картку" натискається.<br />
+Відбувається перехід на сторінку "Поповнення своєї картки"</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-330da42290a24c37c16a261dac18b2db551eeb4e">
+                        <a target="_blank" title="1.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/330da42290a24c37c16a261dac18b2db551eeb4e/1.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/330da42290a24c37c16a261dac18b2db551eeb4e/1.png');"></div>
+                                                    </a>
+                    </div>
+                                    <div class="attachment attachment-9baefee912f7e16c06a4128da61cbaafb900e99b">
+                        <a target="_blank" title="6.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/9baefee912f7e16c06a4128da61cbaafb900e99b/6.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/9baefee912f7e16c06a4128da61cbaafb900e99b/6.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Обрати пункт «З іншої картки» в розділі «Інші способи»</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Відкривається вікно "Поповнити з іншої картки"</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-e26c922af8e8ab2b61bb8154134d2f01590e0787">
+                        <a target="_blank" title="2.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/e26c922af8e8ab2b61bb8154134d2f01590e0787/2.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/e26c922af8e8ab2b61bb8154134d2f01590e0787/2.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести валідний номер картки</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>4149 4141 4141 9229</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Валідний номер картки викликає зміну кольору умовного зображення картки з чорного на зелений.</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-25d792d85678503ff18d6ecc222eb2f6a1bf3510">
+                        <a target="_blank" title="5.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/25d792d85678503ff18d6ecc222eb2f6a1bf3510/5.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/25d792d85678503ff18d6ecc222eb2f6a1bf3510/5.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести валідні дані картки</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>термін дії 08/25<br />
+CVC 111</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Кнопка "Продовжити" змінює колір з сірої на червоної, і стає доступною для натискання.</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">5</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Натиснути кнопку "Продовжити"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>При виборі радіобатона "зберегти карту" картка Приватбанка додається в розділ "Поповнення своєї картки"</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-8c9cf23b60805694d9961486c907251309674c93">
+                        <a target="_blank" title="6.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/8c9cf23b60805694d9961486c907251309674c93/6.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/8c9cf23b60805694d9961486c907251309674c93/6.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            TMAB-3
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Валідація мінімальної суми переказу з картки Приватбанка на картку Монобанку</h1>
+        <div class="description"><p>Негативна перевірка</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Negative</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Regression</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><ol>
+<li>Застосунок monobank встановлений на мобільний телефон</li>
+<li>Здійснено вхід у застосунок в якості клієнта банка Монобанк, тестові дані - телефон клієнта +38063-000-00-38, пін-код 1111</li>
+<li>Клієнт має одну валідну гривневу картку Монобанк</li>
+<li>Клієнт має одну картку Приватбанка, яка додана в застосунок monobank як власна картка клієнта</li>
+</ol></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>На головній сторінці натиснути на кнопку «Поповнити свою картку»</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Кнопка "Поповнити свою картку" натискається.<br />
+Відбувається перехід на сторінку "Поповнення своєї картки"</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Обрати картку ПриватБанка в розділі «Мої картки»</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Відкривається вікно "Приватбанк" з інформаційним повідомленням про відсутність комісії за переказ з боку monobank і з "0" гривень, вказаних для переказу за замовченням</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-0c05c55ec252f8bd4f09fffdc6a1085a1ed9f485">
+                        <a target="_blank" title="6.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/0c05c55ec252f8bd4f09fffdc6a1085a1ed9f485/6.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/0c05c55ec252f8bd4f09fffdc6a1085a1ed9f485/6.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Не вводити жодної суми</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>"0" (текстові дані за замовченням, вводити нічого не потрібно)</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Кнопки "Далі" продовжує бути сірою, неактивною і не натискається.</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-14385a4c46deebcf9b154cbd829c1537b670503e">
+                        <a target="_blank" title="Screenshot_20230312-180429.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/14385a4c46deebcf9b154cbd829c1537b670503e/Screenshot_20230312-180429.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/14385a4c46deebcf9b154cbd829c1537b670503e/Screenshot_20230312-180429.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести суму, яка нижче мінімального ліміта для переказу в гривнях</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>"1"</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>При натисканні кнопки "Далі" з*являється тимчасово спливаюча червона стрічка з інформацією "Мінімальна сума - 100 грн".</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-c1ac8f654dd9fce703f1d381e2af75f0bdbcfd44">
+                        <a target="_blank" title="7_1.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/c1ac8f654dd9fce703f1d381e2af75f0bdbcfd44/7_1.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/c1ac8f654dd9fce703f1d381e2af75f0bdbcfd44/7_1.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+                    <div class="page">
+    <div>
+        <span style="font-size: 0.75rem; font-weight: 400; color: #686868">
+            TMAB-4
+                    </span>
+        <h1 style="margin-bottom: 0.25rem;"> Переказ з картки Приватбанка на картку Монобанку</h1>
+        <div class="description"><p>Позитивна перевірка</p></div>
+        <div class="row">
+                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Severity</h3>
+                    <span class="param"><i
+                                class="fas fa-angle-up color-major"></i> Major</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Priority</h3>
+                    <span class="param"><i
+                                class="fas fa-genderless color-medium"></i> Medium</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Behavior</h3>
+                    <span class="param">Negative</span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Type</h3>
+                    <span class="param">Regression</span>
+                </div>
+                                                <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Layer</h3>
+                        <span class="param">Not set</span>
+                    </div>
+                                                    <div class="col-3">
+                        <h3 style="font-size: 0.875rem;">Is Flaky</h3>
+                        <span class="param">No</span>
+                    </div>
+                                            <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Milestone</h3>
+                    <span class="param">
+                                                    -
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Automation</h3>
+                    <span class="param">
+                                                    Not automated
+                                                </span>
+                </div>
+                                        <div class="col-3">
+                    <h3 style="font-size: 0.875rem;">Status</h3>
+                    <span class="param">
+                                                    Actual
+                                                </span>
+                </div>
+                            <div class="clearfix" style="padding-bottom: 0.75rem;"></div>
+                            <div class="clearfix"></div>
+                <div class="row" style="padding-top: 1rem;">
+                                                        </div>
+                        <div class="clearfix"></div>
+            <div style="padding-top: 1rem;">
+                                    <div class="data-row">
+                        <div class="conditions-header">Pre-conditions</div>
+                        <div class="conditions-data markdown"><ol>
+<li>Застосунок monobank встановлений на мобільний телефон</li>
+<li>Здійснено вхід у застосунок в якості клієнта банка Монобанк, тестові дані - телефон клієнта +38063-000-00-38, пін-код 1111</li>
+<li>Клієнт має одну валідну гривневу картку Монобанк</li>
+<li>Клієнт має одну картку Приватбанка, яка додана в застосунок monobank як власна картка клієнта</li>
+</ol></div>
+                    </div>
+                                            </div>
+            <div class="clearfix"></div>
+                        <div class="clearfix"></div>
+                                    <div class="clearfix"></div>
+                            <div class="case-steps" style="padding-top: 1rem;">
+                                            <h3 style="font-size:1rem; ">Steps to reproduce</h3>
+                                                    <div class="case-steps-case mt-4">
+                                <div class="steps">
+                                    <table class="table-steps" cellpadding="0" cellspacing="0">
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">1</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>На головній сторінці натиснути на кнопку «Поповнити свою картку»</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Кнопка "Поповнити свою картку" натискається.<br />
+Відбувається перехід на сторінку "Поповнення своєї картки"</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-1a940936e4aef3b92b459e979428c57d11ce8a87">
+                        <a target="_blank" title="Screenshot_20230425-122944.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/1a940936e4aef3b92b459e979428c57d11ce8a87/Screenshot_20230425-122944.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/1a940936e4aef3b92b459e979428c57d11ce8a87/Screenshot_20230425-122944.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">2</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Обрати картку Приватбанка в розділі «Мої картки»</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Відкривається вікно "Приватбанк" з інформаційним повідомленням про відсутність комісії за переказ з боку monobank і з "0" гривень, вказаних для переказу за замовченням</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-0c05c55ec252f8bd4f09fffdc6a1085a1ed9f485">
+                        <a target="_blank" title="6.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/0c05c55ec252f8bd4f09fffdc6a1085a1ed9f485/6.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/0c05c55ec252f8bd4f09fffdc6a1085a1ed9f485/6.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">3</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Ввести суму, яка вище мінімального ліміта для переказу в гривнях (> = 100 грн)</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>"100"</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Кнопка "Далі" змінює колір з сірого на червоний і стає активною для натискання.</p></td>
+</tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">4</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Натиснути червону кнопку "Далі". Ввести CVV картки Приватбанк</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>CVV 111</p></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Кнопка "Продовжити" змінює колір з сірого на червоний і стає активною для натискання.</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-d2a17f3a8c897aedc8945b8002d7d76eddfd4c6e">
+                        <a target="_blank" title="Screenshot_20230425-123237.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/d2a17f3a8c897aedc8945b8002d7d76eddfd4c6e/Screenshot_20230425-123237.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/d2a17f3a8c897aedc8945b8002d7d76eddfd4c6e/Screenshot_20230425-123237.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">5</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Натиснути червону кнопку "Продовжити"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>З*являється вікно "Підтвердження оплати"</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-b116cfe399b737dc92704c09d010310eb6b9bab3">
+                        <a target="_blank" title="Screenshot_20230425-123339.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/b116cfe399b737dc92704c09d010310eb6b9bab3/Screenshot_20230425-123339.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/b116cfe399b737dc92704c09d010310eb6b9bab3/Screenshot_20230425-123339.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">6</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>У вікні "Підтвердження оплати" ввести код підтвердження з смс, який прийде на телефон, і натиснути зелену кнопку "Відправити"</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>З*являється форма підтвердження "Платіж надіслано" з червоною кнопкою "Готово"</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-935ebcf917f131ca3f309c4660f2c39c54c2923f">
+                        <a target="_blank" title="Screenshot_20230425-123559.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/935ebcf917f131ca3f309c4660f2c39c54c2923f/Screenshot_20230425-123559.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/935ebcf917f131ca3f309c4660f2c39c54c2923f/Screenshot_20230425-123559.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                                    <tr><td style="border-bottom:none;" colspan="2"></td></tr>
+<tr>
+    <td>Step</td>
+    <td style="font-size: 0.875rem;">7</td>
+</tr>
+<tr>
+    <td>Action</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"><p>Натиснути червону кнопку "Готово", повернутися на головну сторінку додатку, натиснути на значок поповнення картки.</p></td>
+</tr>
+<tr>
+    <td>Input data</td>
+    <td style="padding-right: 1rem; font-size: 0.875rem; word-break: break-all;"></td>
+</tr>
+<tr>
+    <td>Expected result</td>
+    <td style="font-size: 0.875rem; word-break: break-all;"><p>Відкривається інформаційне вікно про поповнення картки Монобанк на суму 100 грн, зі вказанням дати і часу поповнення</p></td>
+</tr>
+    <tr>
+        <td></td>
+        <td colspan="3">
+            <div class="attachments">
+                                    <div class="attachment attachment-7e3767ea2dc9c21b596d4fbd3b3092978ad7df1d">
+                        <a target="_blank" title="Screenshot_20230425-123930.png" href="https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/7e3767ea2dc9c21b596d4fbd3b3092978ad7df1d/Screenshot_20230425-123930.png" style="display: block">
+                                                            <div class="attachment-image" style="background: url('https://qase-app-prod.s3.us-east-2.amazonaws.com/public/team/4b56509519f011cda7ad7adf3663181003695172/attachment/7e3767ea2dc9c21b596d4fbd3b3092978ad7df1d/Screenshot_20230425-123930.png');"></div>
+                                                    </a>
+                    </div>
+                            </div>
+        </td>
+    </tr>
+                                                                            </table>
+                                </div>
+                            </div>
+                                                            </div>
+                    </div>
+    </div>
+</div>
+            </body>
+</html>

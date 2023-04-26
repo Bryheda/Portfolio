@@ -1,0 +1,164 @@
+{
+  "id": "7f1c7bf3-b41e-40ed-be1a-fbdc33943337",
+  "version": "2.0",
+  "name": "2_Tabletki_ua_Digital_Termometer",
+  "url": "https://tabletki.ua",
+  "tests": [{
+    "id": "e7382670-4915-4add-b96d-8947d1cb6649",
+    "name": "2_Tabletki_ua_Digital_Termometer",
+    "commands": [{
+      "id": "06aae860-a304-4d8c-a076-6d17c5479900",
+      "comment": "",
+      "command": "open",
+      "target": "/uk/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d490a459-6432-4511-8fcf-b78294899ae2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x776",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3713c976-58f0-465d-85c0-1a6072982c16",
+      "comment": "",
+      "command": "click",
+      "target": "id=homePageSearch",
+      "targets": [
+        ["id=homePageSearch", "id"],
+        ["css=#homePageSearch", "css:finder"],
+        ["xpath=//input[@id='homePageSearch']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c52264c-b0f5-412b-868b-b448d95c5f18",
+      "comment": "",
+      "command": "store",
+      "target": "Термометр цифровий",
+      "targets": [],
+      "value": "SearchText"
+    }, {
+      "id": "145e6443-dad3-4913-b887-85304947adf9",
+      "comment": "",
+      "command": "type",
+      "target": "id=homePageSearch",
+      "targets": [
+        ["id=homePageSearch", "id"],
+        ["css=#homePageSearch", "css:finder"],
+        ["xpath=//input[@id='homePageSearch']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${SearchText}"
+    }, {
+      "id": "45fafa0a-9b87-435d-9e8b-f39adb0b798f",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=homePageSearch",
+      "targets": [
+        ["id=homePageSearch", "id"],
+        ["css=#homePageSearch", "css:finder"],
+        ["xpath=//input[@id='homePageSearch']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "0d2abf38-2cc9-47a1-b23f-001481423fdb",
+      "comment": "",
+      "command": "click",
+      "target": "css=#headingct > .collapsible",
+      "targets": [
+        ["css=#headingct > .collapsible", "css:finder"],
+        ["xpath=//div[@id='headingct']/button", "xpath:idRelative"],
+        ["xpath=//div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "caea0f67-4ca7-473f-9778-a6e12a999fdf",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//label[contains(.,'Електронні (контактні) термометри')]",
+      "targets": [
+        ["css=#collapsect .custom-control:nth-child(2) > .custom-control-label", "css:finder"],
+        ["xpath=//div[@id='collapsect']/div/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Електронні (контактні) термометри')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "69885bee-a05f-4ae6-ab5f-01ecef20a956",
+      "comment": "",
+      "command": "click",
+      "target": "css=#headingprod > .collapsible",
+      "targets": [
+        ["css=#headingprod > .collapsible", "css:finder"],
+        ["xpath=//div[@id='headingprod']/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "daed63b9-8b47-40c3-a72d-59a1388dcdd7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//label[contains(.,'Медхауз Свіс ГмбХ, ТОВ')]",
+      "targets": [
+        ["css=#collapseprod .custom-control:nth-child(2) > .custom-control-label", "css:finder"],
+        ["xpath=//div[@id='collapseprod']/div/div[2]/label", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/div/div[2]/label", "xpath:position"],
+        ["xpath=//label[contains(.,'Медхауз Свіс ГмбХ, ТОВ')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "520f70b8-b58f-48e3-9f30-4468632e023d",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "xpath=//span[contains(.,'Термометр медичний Gamma Thermo Base цифровий')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50a7591c-c2b4-4fb4-9760-049fb6c67d87",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Термометр медичний Gamma Thermo Base цифровий')]",
+      "targets": [
+        ["css=#sku_0 .card__category--info span", "css:finder"],
+        ["xpath=//div[@id='sku_0']/article/div[2]/div/div/a/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Термометр медичний Gamma Thermo Base цифровий')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "eb6e2663-23e0-4f38-9187-47e9b1c56c2e",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=findProduct",
+      "targets": [],
+      "value": "ЗНАЙТИ В АПТЕКАХ"
+    }, {
+      "id": "f991438a-de14-446e-8dcd-2378ed5bdb85",
+      "comment": "",
+      "command": "click",
+      "target": "id=findProduct",
+      "targets": [
+        ["id=findProduct", "id"],
+        ["css=#findProduct", "css:finder"],
+        ["xpath=//a[@id='findProduct']", "xpath:attributes"],
+        ["xpath=//div[@id='productCardInformation']/div[2]/div/div[3]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/uk/Gamma-thermo-base/1015607/pharmacy/lviv/')])[2]", "xpath:href"],
+        ["xpath=//div/div[3]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "27bdc28f-db5e-40c5-965b-3777d3fb653e",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://tabletki.ua/"],
+  "plugins": []
+}
